@@ -18,8 +18,10 @@ Antes de escribir código:
 4. Lee `/docs/02-sdd-workflow.md`.
 5. Lee `/docs/03-coding-standards.md`.
 6. Lee `/docs/04-testing-strategy.md`.
-7. Identifica si la US afecta a OpenAPI, dominio, aplicación, infraestructura, persistencia, seguridad o tests de aceptación.
-8. Propón brevemente el diseño por capas y los ficheros que vas a tocar.
+7. Lee `/docs/06-handoff-process.md`.
+8. Revisa `/docs/ai/handoffs/*.md` y prioriza handoffs de la misma capacidad, mismos endpoints, mismos servicios, mismas entidades o recientes.
+9. Identifica si la US afecta a OpenAPI, dominio, aplicación, infraestructura, persistencia, seguridad o tests de aceptación.
+10. Propón brevemente el diseño por capas y los ficheros que vas a tocar.
 
 Durante la implementación:
 
@@ -29,6 +31,12 @@ Durante la implementación:
 - Usa MapStruct para mapeos.
 - Añade tests de la capa correspondiente.
 - Si modificas contrato HTTP, empieza por OpenAPI y regenera.
+
+Al finalizar:
+
+- Genera handoff obligatorio usando `/docs/ai/handoff-template.md`.
+- Guarda el handoff en `/docs/ai/handoffs/handoff-[yyyyMMdd]-[feature-kebab-case].md`.
+- Devuelve resumen, tests, comandos, criterios cubiertos, handoff generado y riesgos.
 
 Al finalizar devuelve:
 

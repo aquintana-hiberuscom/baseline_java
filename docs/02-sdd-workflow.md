@@ -5,7 +5,9 @@
 Definir el flujo obligatorio para implementar cambios con agentes de IA sin perder control técnico ni trazabilidad.
 
 ```text
-User Story -> Specification -> Technical Design -> Task Breakdown -> Implementation -> Tests -> Validation -> AI Usage Log / ADR si aplica
+User Story -> Specification -> Technical Design -> Task Breakdown -> Implementation -> Tests -> Validation -> Handoff -> AI Usage Log / ADR si aplica
+
+El handoff forma parte de la validación final de cada US o tarea.
 ```
 
 ## 1. User Story primero

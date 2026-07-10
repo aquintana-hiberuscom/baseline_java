@@ -92,6 +92,22 @@ Prohibido salvo petición explícita del usuario:
 
 El propietario del repositorio controla commits y pushes.
 
+## 4.6 Regla obligatoria de handoff
+
+Antes de implementar una nueva US o tarea:
+1. Lee la US/tarea actual.
+2. Lee el baseline técnico.
+3. Revisa los handoffs previos en `/docs/ai/handoffs/`.
+4. Identifica código, endpoints, DTOs, mappers, servicios, entidades, tests o decisiones que deban reutilizarse.
+5. Evita duplicidades funcionales o técnicas.
+6. Menciona en el plan qué handoffs se han tenido en cuenta.
+
+Al cerrar cada US o tarea:
+1. Genera un handoff obligatorio usando `/docs/ai/handoff-template.md`.
+2. Guarda el fichero en `/docs/ai/handoffs/`.
+3. Usa la convención: `handoff-[yyyyMMdd]-[feature-kebab-case].md`.
+4. Incluye el handoff en el mismo cambio/PR que la implementación.
+
 ## 5. Flujo obligatorio antes de implementar una US
 
 Para cualquier User Story, tarea técnica o bug:

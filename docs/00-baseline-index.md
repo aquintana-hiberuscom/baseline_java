@@ -12,7 +12,7 @@ Evitar que cada agente de IA implemente “a su manera”. El baseline técnico 
 |---|---|
 | `/AGENTS.md` | Contrato principal para agentes de IA. Contiene reglas operativas, límites y orden de lectura. |
 | `/.github/copilot-instructions.md` | Instrucciones globales de GitHub Copilot para el repositorio. Debe ser corto y remitir a `/AGENTS.md` y `/docs`. |
-| `/.github/instructions/java-hexagonal.instructions.md` | Instrucciones específicas para paths Java/Spring/hexagonal. |
+| `/.github/instructions/java.instructions.md` | Instrucciones específicas para paths Java/Spring/hexagonal. |
 | `/.github/prompts/implement-user-story.prompt.md` | Prompt reutilizable para implementar una US siguiendo el baseline. |
 | `/README.md` | Onboarding humano del proyecto. No debe ser el baseline completo. |
 | `/docs/01-technical-baseline.md` | Arquitectura, stack, módulos, estructura y reglas técnicas no negociables. |
@@ -20,6 +20,9 @@ Evitar que cada agente de IA implemente “a su manera”. El baseline técnico 
 | `/docs/03-coding-standards.md` | Convenciones de código del día a día. |
 | `/docs/04-testing-strategy.md` | Estrategia de pruebas, tipos de test y quality gates. |
 | `/docs/05-ai-usage-log.md` | Registro de decisiones y acciones relevantes realizadas con IA. |
+| `/docs/06-handoff-process.md` | Proceso obligatorio de handoff por US/tarea. |
+| `/docs/ai/handoff-template.md` | Plantilla oficial de handoff. |
+| `/docs/ai/handoffs/` | Handoffs generados al cerrar US/tareas. |
 | `/docs/adr/` | Architecture Decision Records para decisiones técnicas relevantes. |
 
 ## Qué NO debe duplicarse
@@ -56,6 +59,23 @@ Evitar que cada agente de IA implemente “a su manera”. El baseline técnico 
 9. Añadir tests.
 10. Validar criterios de aceptación.
 11. Documentar cambios relevantes en `/docs/05-ai-usage-log.md` si aplica.
+
+
+## Orden de lectura para implementar una US
+
+1. US/tarea actual.
+2. `/AGENTS.md`.
+3. `/docs/00-baseline-index.md`.
+4. `/docs/01-technical-baseline.md`.
+5. `/docs/02-sdd-workflow.md`.
+6. `/docs/03-coding-standards.md`.
+7. `/docs/04-testing-strategy.md`.
+8. `/docs/06-handoff-process.md`.
+9. Handoffs relevantes en `/docs/ai/handoffs/`.
+
+## Regla clave
+
+El baseline define cómo se debe implementar. Los handoffs explican qué se ha implementado ya y qué no se debe duplicar.
 
 ## Convención de documentación funcional recomendada
 

@@ -12,6 +12,14 @@ Antes de generar, modificar o revisar código, aplica siempre:
 4. [`/docs/02-sdd-workflow.md`](../docs/02-sdd-workflow.md)
 5. [`/docs/03-coding-standards.md`](../docs/03-coding-standards.md)
 6. [`/docs/04-testing-strategy.md`](../docs/04-testing-strategy.md)
+7. `/docs/06-handoff-process.md`
+
+## Handoff obligatorio
+
+- Lee handoffs anteriores antes de implementar.
+- Genera handoff obligatorio al cerrar cada US o tarea.
+- Los handoffs viven en `/docs/ai/handoffs/`.
+- Usa la plantilla `/docs/ai/handoff-template.md`.
 
 ## Resumen operativo
 

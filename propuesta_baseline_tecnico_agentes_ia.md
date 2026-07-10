@@ -5,7 +5,7 @@ Incluye la estructura recomendada y el contenido optimizado para un proyecto Jav
 ## Ficheros incluidos
 
 - `.github/copilot-instructions.md`
-- `.github/instructions/java-hexagonal.instructions.md`
+- `.github/instructions/java.instructions.md`
 - `.github/prompts/implement-user-story.prompt.md`
 - `AGENTS.md`
 - `README.md`
@@ -41,7 +41,7 @@ evita duplicar todo el contenido.
 
 Esto es importante porque Copilot puede usar ese fichero como contexto global de repositorio. [eu-prod.as...rosoft.com]
 
-##  3. Añado .github/instructions/java-hexagonal.instructions.md
+##  3. Añado .github/instructions/java.instructions.md
 Este fichero es específico para código Java/Spring/hexagonal. Es decir, cuando el agente trabaje sobre código Java, tiene reglas más concretas:
 
 estructura por agregado,
